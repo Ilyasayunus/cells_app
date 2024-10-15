@@ -49,19 +49,19 @@ Route::middleware(['auth'])->group(function () {
 
 Route::middleware(['auth'])->group(function () {
     Route::get('/corousels', function () {
-        return view('admin.corousels');
+        return view('admin.corousel.corousels');
     })->name('admin.corousels');
 });
 
 Route::middleware(['auth'])->group(function () {
     Route::get('/news', function () {
-        return view('admin.news');
+        return view('admin.news.news');
     })->name('admin.news');
 });
 
 Route::middleware(['auth'])->group(function () {
     Route::get('/profile', function () {
-        return view('admin.profile');
+        return view('admin.profile.profile');
     })->name('admin.profile');
 });
 
