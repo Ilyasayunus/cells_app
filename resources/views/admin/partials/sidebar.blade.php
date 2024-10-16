@@ -1,3 +1,5 @@
+
+
 <div x-data="{ open: false }" class="flex h-screen">
     <!-- Sidebar -->
     <div :class="open ? 'block' : 'hidden lg:block'" class="bg-blue-900 text-white w-64 h-full shadow-lg transition-all duration-300 lg:flex-shrink-0">
@@ -12,9 +14,9 @@
                 <i class="fas fa-tachometer-alt mr-3"></i>
                 <span class="text-left">Dashboard</span>
             </a>
-            <a href="{{ route('admin.corousels') }}" class="w-full flex items-center py-2.5 px-4 rounded hover:bg-blue-700 transition duration-300">
+            <a href="{{ route('admin.carousels') }}" class="w-full flex items-center py-2.5 px-4 rounded hover:bg-blue-700 transition duration-300">
                 <i class="fas fa-image mr-3"></i>
-                <span class="text-left">Corousels</span>
+                <span class="text-left">Carousels</span>
             </a>
             <a href="{{ route('admin.news') }}" class="w-full flex items-center py-2.5 px-4 rounded hover:bg-blue-700 transition duration-300">
                 <i class="fas fa-newspaper mr-3"></i>

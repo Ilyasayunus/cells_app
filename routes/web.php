@@ -48,7 +48,7 @@ Route::middleware(['auth'])->group(function () {
 });
 
 Route::middleware(['auth'])->group(function () {
-    Route::get('/corousels', function () {
+    Route::get('/carousels', function () {
         return view('admin.carousel.carousels');
     })->name('admin.carousels');
 });
