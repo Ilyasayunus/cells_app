@@ -7,10 +7,11 @@
     <h1 class="text-3xl font-bold mb-6">Carousel Managements</h1>
 
     <div class="mb-4">
-        <button class="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-400">
+        <a href="{{ route('carousels.tambah') }}" class="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-400">
             Tambah Data
-        </button>
+        </a>
     </div>
+    
 
     <!-- Tabel Carousel dengan data kosong -->
     <div class="overflow-x-auto">

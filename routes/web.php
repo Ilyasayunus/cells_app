@@ -4,6 +4,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\Carousels\CarouselController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -70,3 +71,9 @@ Route::post('/logout', function () {
     Auth::logout();
     return redirect()->route('login')->with('success', 'Anda telah logout.');
 })->name('logout');
+
+
+
+
+//HALAMAN CAROUSEL
+Route::get('/carousels/tambah',[CarouselController::class,'tambah'])->name('carousels.tambah');
